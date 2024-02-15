@@ -18,22 +18,29 @@
         ></script>
     </head>
     <body>
-        </div>  
         <header>
             <div class="logo">
-              <h1>Portfolio</h1>
+              <h1>Salma Seghaier</h1>
             </div>
             <nav>
               <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#accueil">Experiences</a></li>
                 <li><a href="#services">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </header>
-      
+          
+          <div id="accueil">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="/assets/cover.png" alt="Salma seghaier">
+                </div>
+              </div>
+            </div>
+          </div>
           <!--START EDUCATION-->
           <div id="education">
             <!-- diplome fac-->
@@ -45,7 +52,7 @@
               <div>
                 <!-- université -->
                 <div id="faculte-groupe">
-                  <img src="/assets/university.png" class="element-icon" />
+                  <img src="/assets/university.png" class="element-ficon" />
                   <p class="carte-nom">Université Tekup - Tunis</p>
                 </div>
                 <!-- diplome -->
@@ -72,7 +79,7 @@
               <div>
                 <!-- université -->
                 <div id="faculte-groupe">
-                  <img src="/assets/university.png" class="element-icon" />
+                  <img src="/assets/university.png" class="element-ficon" />
                   <p class="carte-nom">
                     Institut Supérieur d'informatique et de gestion - kairouan
                   </p>
@@ -101,7 +108,7 @@
               <div>
                 <!-- université -->
                 <div id="faculte-groupe">
-                  <img src="/assets/university.png" class="element-icon" />
+                  <img src="/assets/university.png" class="element-ficon" />
                   <p class="carte-nom">
                     Lycée Ibn rachik
                   </p>
@@ -129,12 +136,12 @@
                 <div class="card-body">
                   <h5>Development web</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
+                    Développeur web polyvalent avec une expertise dans la création de sites et 
+                    applications robustes. Maîtrise des langages de programmation comme HTML, CSS, JavaScript, 
+                    et expérience dans l'utilisation de frameworks modernes pour assurer des solutions web innovantes et efficaces.
                   </p>
                   <p class="card-text">
-                    <small class="text-muted">Lorem ipsum dolor</small>
+                    <small class="text-muted">Development web</small>
                   </p>
                 </div>
               </div>
@@ -144,12 +151,12 @@
                 <div class="card-body">
                   <h5>Development mobile</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
+                    Développeur mobile expérimenté, compétent dans la conception et la programmation 
+                    d'applications iOS et Android. Expertise en langages tels que Swift, Kotlin, 
+                    et maîtrise des principaux frameworks pour garantir des applications performantes et conviviales.
                   </p>
                   <p>
-                    <small class="text-muted">Lorem ipsum dolor</small>
+                    <small class="text-muted">Development mobile</small>
                   </p>
                 </div>
               </div>
@@ -159,23 +166,23 @@
                 <div class="card-body">
                   <h5>Digital marketing</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam.
+                    Expert en stratégies de marketing digital, spécialisé dans l'optimisation de contenu SEO, 
+                    la gestion de campagnes publicitaires PPC, et l'analyse de données pour maximiser la visibilité 
+                    en ligne et les performances des campagnes. Maîtrise des outils d'automatisation marketing 
+                    et expérience dans la création de contenu engageant sur les médias sociaux.
                   </p>
                   <p>
-                    <small class="text-muted">Lorem ipsum dolor</small>
+                    <small class="text-muted">Digital marketing</small>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <!--FIN SERVICES-->
-          <!--DEBUT CONTACT-->
+          
           <div id="contact">
             <div class="contact-form">
               <h2>Contacter moi</h2>
-              <form action="submit">
+              <form type="submit" method="POST" >
                 <input type="text" name="nom" placeholder="Nom" required />
                 <input type="email" name="email" placeholder="Email" required />
                 <input type="text" name="sujet" placeholder="Sujet" required />
@@ -185,32 +192,30 @@
                   rows="8"
                   required
                 ></textarea>
-                <button type="submit">Envoyer Message</button>
+                <button type="submit"><a href="/error.html">Envoyer Message</a></button>
               </form>
             </div>
       
             <div class="contact-info">
               <p>Adresse: Tunis Tunisie</p>
               <p>Téléphone: +216 29 772 786</p>
-              <p>Email: seghaiersalma@gmail.com</p>
-              <p>Site web: google.com</p>
+              <p>Email: <a href="mailto:seghaiersalma@gmail.com">seyiersalma@gmail.com</a></p>
+              <p>Linkedin: <a href="https://www.linkedin.com/in/salma-seghaier-3ab460204/">wwww.linkedin.com/in/salmaseghaier</a></p>
             </div>
           </div>
-          <!--FIN CONTACT-->
-          <!--DEBUT FOOTER-->
+         
+      
           <div id="footer">
             <div>
               <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#education">Éducation</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#services">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <p>© 2024 Salma Seghaier</p>
           </div>
-          <!--FIN FOOTER-->
+         
     </body>
 </html>
